@@ -5,20 +5,54 @@
          version="6.0">
 
     <display-name>Lab1</display-name>
-    <listener>
-        <listener-class>
-            com.sun.xml.ws.transport.http.servlet.WSServletContextListener
-        </listener-class>
-    </listener>
+
     <servlet>
-        <servlet-name>CalculatorWebService</servlet-name>
-        <servlet-class>
-            com.sun.xml.ws.transport.http.servlet.WSServlet
-        </servlet-class>
+        <servlet-name>BookingService</servlet-name>
+        <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>CalculatorWebService</servlet-name>
-        <url-pattern>/calculatorWebService</url-pattern>
+        <servlet-name>BookingService</servlet-name>
+        <url-pattern>/BookingService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MenuService</servlet-name>
+        <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MenuService</servlet-name>
+        <url-pattern>/MenuService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReviewService</servlet-name>
+        <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReviewService</servlet-name>
+        <url-pattern>/ReviewService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoyaltyService</servlet-name>
+        <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoyaltyService</servlet-name>
+        <url-pattern>/LoyaltyService</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReportService</servlet-name>
+        <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReportService</servlet-name>
+        <url-pattern>/ReportService</url-pattern>
     </servlet-mapping>
 </web-app>

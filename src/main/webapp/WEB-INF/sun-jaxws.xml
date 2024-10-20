@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
     <endpoint
-            implementation="com.example.lab1_jakarta.CalculatorWebServiceImpl"
-            name="CalculatorWebService"
-            url-pattern="/calculatorWebService" />
+            implementation="com.example.lab1_jakarta.BookingServiceImpl"
+            name="BookingService"
+            url-pattern="/BookingService" />
+    <endpoint
+            implementation="com.example.lab1_jakarta.MenuServiceImpl"
+            name="MenuService"
+            url-pattern="/MenuService" />
+    <endpoint
+            implementation="com.example.lab1_jakarta.LoyaltyServiceImpl"
+            name="LoyaltyService"
+            url-pattern="/LoyaltyService" />
+    <endpoint
+            implementation="com.example.lab1_jakarta.ReportServiceImpl"
+            name="ReportService"
+            url-pattern="/ReportService" />
+    <endpoint
+            implementation="com.example.lab1_jakarta.ReviewServiceImpl"
+            name="ReviewService"
+            url-pattern="/ReviewService" />
 </endpoints>
